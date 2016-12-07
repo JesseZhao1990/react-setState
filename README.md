@@ -35,9 +35,11 @@
         }
 
         changeState=()=>{
-            this.setState({test:"state changed"},()=>{
-              console.log(this.state.test);
-            });
+            this.setState({test:"state changed"},
+                  ()=>{
+                         console.log(this.state.test);
+                   }
+            );
         }
 
         render(){
