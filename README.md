@@ -33,15 +33,12 @@
           super(props);
           this.state={test:"this is a test"}
         }
-
         changeState=()=>{
-            this.setState({test:"state changed"},
-                  ()=>{
-                         console.log(this.state.test);
-                   }
+            this.setState({test:"state changed"},()=>{
+                  console.log(this.state.test);
+            }
             );
         }
-
         render(){
           return(
             <div>
